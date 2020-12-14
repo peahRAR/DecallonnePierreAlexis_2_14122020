@@ -1,12 +1,41 @@
 @font-face {
     font-family: "Raleway";
-    src: url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
-   }
+    src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+}
 
-a{
+@font-face {
+    font-family: "Raleway-SemiBold";
+    src: url("../fonts/Raleway-SemiBold.ttf") format("truetype");
+}
+
+body {
+    font-family: "Raleway";
+}
+
+a {
     text-decoration: none;
 }
 
-body{
-    font-family: "Raleway";   
+a.headerSignup {
+    color: #0065fc;
+    cursor: pointer;
+    font-family: "Raleway-SemiBold";
+}
+
+.nav-link[data-active="true"] {
+    color: #0065fc;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+    .nav-link[data-active="true"] {
+        border-bottom: 3px solid #0065fc;
+    }
+}
+
+@media screen and (min-width: 701px) {
+    .nav-link[data-active="true"] {
+        border-top: 3px solid #0065fc;
+    }
 }

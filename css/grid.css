@@ -27,6 +27,10 @@
     padding: 2rem;
 }
 
+a.nav-link{
+    color: black;
+}
+
 .headerSignup{
     grid-area: button;
     padding: 2rem;
@@ -35,7 +39,7 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .header {
         grid-template-columns: auto 1fr auto;
         grid-template-areas:
@@ -56,7 +60,7 @@
     }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 701px) {
     .header {
         grid-template-columns: auto 1fr auto auto;
         grid-template-areas: "logo . navbar button";
