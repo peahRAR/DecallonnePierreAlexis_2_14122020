@@ -16,14 +16,29 @@ a {
     text-decoration: none;
 }
 
+
 a.headerSignup {
     color: #0065fc;
     cursor: pointer;
     font-family: "Raleway-SemiBold";
 }
 
+
+.nav-link {
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    transition: color 315ms ease-in;
+    transition: border-top 315ms ease-in;
+
+}
+
 .nav-link[data-active="true"] {
     color: #0065fc;
+}
+
+.headerSignup {
+    padding: 2rem;
+    transition: border-top 315ms ease-in;
 }
 
 /* Media Queries */
@@ -32,10 +47,39 @@ a.headerSignup {
     .nav-link[data-active="true"] {
         border-bottom: 3px solid #0065fc;
     }
+
+    .nav-link[data-active="false"] {
+        border-bottom: 3px solid #F2F2F2;
+        transition: border-bottom 315ms ease-in;
+    }
+
+    .nav-link:hover {
+        border-bottom-color: #0065fc;
+        color: #0065fc;
+    }
+
+    a.headerSignup{
+        border-bottom: 3 px solid #F2F2F2;
+    }
+
 }
 
 @media screen and (min-width: 701px) {
     .nav-link[data-active="true"] {
         border-top: 3px solid #0065fc;
+    }
+
+    a.headerSignup{
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+    }
+  
+    a.nav-link:hover {
+        border-top-color:  #0065fc;
+        color: #0065fc;
+    }
+
+    a.headerSignup:hover {
+        border-top-color:  #0065fc;
     }
 }
