@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+/* HEADER */
+
 .header {
     display: grid;
     align-items: center;
@@ -19,23 +21,46 @@
     display: flex;
     align-items: center;
     grid-area: navbar;
-    
 }
 
-.nav-link{
+.nav-link {
     text-align: center;
     padding: 2rem;
 }
 
-a.nav-link{
+a.nav-link {
     color: black;
 }
 
-.headerSignup{
+.headerSignup {
     grid-area: button;
     padding: 2rem;
 }
 
+/* VITRINE HEBERGEMENT */
+
+.hostItems {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 6fr 3fr;
+}
+
+.hostStore {
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.storeTitle {
+    grid-column: 1/-1;
+}
+
+.popularity {
+    display: grid;
+    row-gap: 2rem;
+    align-items: start;
+
+}
 
 /* MEDIA QUERIES */
 
@@ -43,7 +68,7 @@ a.nav-link{
     .header {
         grid-template-columns: auto 1fr auto;
         grid-template-areas:
-            "logo . button"
+            "logo - button"
             "navbar navbar navbar";
     }
 
@@ -51,11 +76,11 @@ a.nav-link{
         order: 2;
     }
 
-    .nav-link{
+    .nav-link {
         width: 50%;
     }
 
-    .headerSignup{
+    .headerSignup {
         order: 1;
     }
 }
@@ -63,6 +88,24 @@ a.nav-link{
 @media screen and (min-width: 701px) {
     .header {
         grid-template-columns: auto 1fr auto auto;
-        grid-template-areas: "logo . navbar button";
+        grid-template-areas: "logo - navbar button";
+    }
+}
+
+@media (min-width: 950px) {
+    .hostStore {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .popularity{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat (3, 9rem);
+    }
+}
+
+@media (max-width: 1450px) {
+    .hostItems {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
     }
 }
