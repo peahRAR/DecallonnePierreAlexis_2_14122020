@@ -59,7 +59,7 @@ a.nav-link {
     display: grid;
     row-gap: 2rem;
     align-items: start;
-
+    grid-template-rows: auto repeat(3, 1fr);
 }
 
 /* MEDIA QUERIES */
@@ -97,15 +97,34 @@ a.nav-link {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .popularity{
+    .popularity {
         grid-template-columns: 1fr;
         grid-template-rows: auto repeat (3, 9rem);
     }
 }
 
+
 @media (max-width: 1450px) {
     .hostItems {
         grid-template-columns: 1fr;
         row-gap: 2rem;
+    }
+    
+    .popularity {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 8rem;
+        column-gap: 2rem;
+        grid-row-start: 1;
+    }
+    
+    .popularityTitle {
+        grid-column: 1/-1;
+    }
+}
+
+@media (max-width: 1000px) {
+    .popularity {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(3, 9rem);
     }
 }
