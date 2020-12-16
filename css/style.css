@@ -99,16 +99,14 @@ a.headerSignup {
     padding: 0 1.5rem;
     font-size: 1rem;
     cursor: pointer;
+    color: white;
+    font-family: 'Raleway-SemiBold';
 }
 
 .searchSubmit:hover {
     background-color: #2c80fe;
 }
 
-.searchSubmit p {
-    color: white;
-    font-family: 'Raleway-SemiBold';
-}
 
 /* FILTERS */
 
