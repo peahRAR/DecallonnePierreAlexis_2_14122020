@@ -16,7 +16,23 @@ a {
     text-decoration: none;
 }
 
+h2{
+    font-family: 'Raleway-SemiBold';
+}
+
+img{
+    object-fit: cover;
+}
+
 /* HEADER */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
+}
 
 a.headerSignup {
     color: #0065fc;
@@ -185,10 +201,51 @@ a.headerSignup {
     color: #0065fc;
 }
 
+
 /* Vitrine hébergement */
+
+
+.hostStore{
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.storeTitle h2{
+    margin: 0;
+}
+
+.cardStyle{
+    background-color: white;
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
+
+.cardStyle a{
+    color: black;
+}
 
 .cardFigure {
     margin: 0;
+}
+
+figcaption h3{
+    margin: 0 0.5rem;
+    font-family: 'Raleway-SemiBold';
+}
+
+p.cardInfo{
+    margin: 0.2rem 0.5rem 1rem 0.5rem;
+    font-size: 0.9rem;
+}
+
+.rate{
+    color: #d9d9d9;
+    margin : 0.7rem 0 0.3rem 0.5rem;
+}
+
+.fa-star[data-active="true"]{
+    color: #0065fc;
 }
 
 .hostCardImg {
@@ -200,9 +257,16 @@ a.headerSignup {
     border-radius: 1rem 1rem 0 0;
 }
 
+.popularity{
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
 .popularityTitle{
     display: flex;
     justify-content: space-between;
+    margin: 0;
 }
 
 .popularCardContent {
@@ -221,8 +285,50 @@ a.headerSignup {
 }
 
 .popularCardContentImg img{
+    border-radius: 1rem 0 0 1rem;
+    position: absolute;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
+.popularCardContentInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infoTop h3{
+    margin: 0 0 0.2rem 0.5rem;
+}
+
+
+
+/* Footer */
+
+footer{
+    background-color: #d9d9d9;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.footerColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLink{
+    margin: 0.3rem 0;
+    color: black;
+}
+
+.footerLink:hover{
+    text-decoration: underline;
+}
+
 
 /* Media Queries */
 
@@ -248,7 +354,10 @@ a.headerSignup {
         border-bottom: 3 px solid #F2F2F2;
     }
     
-    /* SEARCH & FILTERS */
+    /* FOOTER */
+    footer{
+        flex-direction: column;
+    }
     
 }
 

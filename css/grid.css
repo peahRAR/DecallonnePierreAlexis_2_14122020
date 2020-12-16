@@ -58,7 +58,6 @@ a.nav-link {
 .popularity {
     display: grid;
     row-gap: 2rem;
-    align-items: start;
     grid-template-rows: auto repeat(3, 1fr);
 }
 
