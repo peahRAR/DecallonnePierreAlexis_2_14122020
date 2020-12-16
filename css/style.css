@@ -68,6 +68,7 @@ a.headerSignup {
     box-sizing: border-box;
 }
 
+
 .topSearchTitle{
     font-family: 'Raleway-SemiBold';
     margin-bottom: 0.5rem;
@@ -302,6 +303,9 @@ p.cardInfo{
     margin: 0 0 0.2rem 0.5rem;
 }
 
+/* ACTIVITE */
+
+
 
 
 /* Footer */
@@ -352,6 +356,12 @@ footer{
     
     a.headerSignup{
         border-bottom: 3 px solid #F2F2F2;
+    }
+
+    /* MAIN */
+
+    .main{
+        margin-top: 12rem;
     }
     
     /* FOOTER */
