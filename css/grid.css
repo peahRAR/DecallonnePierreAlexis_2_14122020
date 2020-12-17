@@ -122,8 +122,9 @@ a.nav-link {
 
     .popularity {
         grid-template-columns: 1fr;
-        grid-template-rows: auto repeat (3rem, 9rem);
+        grid-template-rows: auto (3, 9rem);
     }
+
 }
 
 
