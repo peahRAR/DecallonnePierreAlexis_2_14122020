@@ -68,6 +68,10 @@ a.headerSignup {
     box-sizing: border-box;
 }
 
+.searchLogo{
+    display: none;
+}
+
 
 .topSearchTitle{
     font-family: 'Raleway-SemiBold';
@@ -418,5 +422,16 @@ footer{
 
     a.headerSignup:hover {
         border-top-color:  #0065fc;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .searchLogo{
+        display: block;
+    }
+
+    .searchWord{
+        display: none;
     }
 }
