@@ -34,6 +34,10 @@ img{
     z-index: 1;
 }
 
+.logoHeader{
+    transform: scale(1.15);
+}
+
 a.headerSignup {
     color: #0065fc;
     cursor: pointer;
@@ -224,6 +228,11 @@ a.headerSignup {
     background-color: white;
     padding: 0.3rem;
     border-radius: 1rem;
+    box-shadow: 1px 1px 2px 3px #ccc; 
+}
+
+.cardStyle:hover{
+    transform: scale(0.99);
 }
 
 .cardStyle a{
@@ -232,6 +241,15 @@ a.headerSignup {
 
 .cardFigure {
     margin: 0;
+}
+
+a.moreItems{
+    color: black;
+    font-family: 'Raleway-SemiBold';
+}
+
+a.moreItems:hover{
+    color:#0065fc;
 }
 
 figcaption h3{
@@ -309,6 +327,10 @@ p.cardInfo{
 
 /* ACTIVITE */
 
+.activite h2{
+    margin-bottom: 2.1rem;
+}
+
 .cardActivite{
     overflow: hidden;
     border-radius: 1rem;
@@ -331,8 +353,9 @@ p.cardInfo{
     height: 100%;
 }
 
-
-
+h3.activiteTitle{
+    margin-left: 1rem;
+}
 
 /* Footer */
 
@@ -433,5 +456,27 @@ footer{
 
     .searchWord{
         display: none;
+    }
+
+    .locatorIcon{
+        padding: 1rem 0.5rem;
+    }
+
+    .searchbar{
+        padding: 0 0.2rem 0 0.3rem;
+    }
+
+    .searchSubmit{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .popularCardContent h3{
+        font-size: 0.9rem;
+    }
+
+    p.cardInfo{
+        margin-bottom: 0.5rem;
+        font-size: 0.75rem;
     }
 }
