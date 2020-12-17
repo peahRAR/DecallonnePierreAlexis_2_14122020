@@ -334,11 +334,16 @@ p.cardInfo{
 
 footer{
     background-color: #d9d9d9;
+}
+
+.footer{
+    max-width: 1440px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem 2rem;
+    margin: auto;
 }
 
 .footerColumn{
